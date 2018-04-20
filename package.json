@@ -1,6 +1,6 @@
 {
   "name": "github-file-icon",
-  "description": "A Chrome Extension which gives different filetypes different icons to GitHub, Gitlab, Bitbucket, gitea and gogs.",
+  "description": "A Firefox Add-On which gives different filetypes different icons to GitHub, Gitlab, Bitbucket, gitea and gogs.",
   "license": "MIT",
   "author": "xxhomey19",
   "homepage": "https://github.com/xxhomey19/github-file-icon#readme",
@@ -21,7 +21,7 @@
     "testonly": "jest",
     "testonly:cov": "jest --coverage --runInBand --forceExit --no-cache",
     "testonly:watch": "jest --watch",
-    "zip": "npm run build && zip -r build/File_Icon_For_GitHub_GitLab_And_Bitbucket_$npm_package_version.zip build"
+    "zip": "npm run build && web-ext build -s build/"
   },
   "dependencies": {
     "dom-loaded": "^1.0.1",
@@ -60,6 +60,7 @@
     "prettier-package-json": "^2.0.1",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "1.3.0",
+    "web-ext": "^2.9.1",
     "webpack": "^4.21.0",
     "webpack-chrome-extension-reloader": "^0.8.3",
     "webpack-cli": "^3.1.2",

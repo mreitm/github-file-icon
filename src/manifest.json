@@ -2,9 +2,13 @@
   "manifest_version": 2,
   "name": "File Icon for GitHub, GitLab and Bitbucket",
   "author": "xxhomey19",
+  "applications": {
+    "gecko": {
+      "id": "{85860b32-02a8-431a-b2b1-40fbd64c9c69}"
+    }
+  },
   "background": {
-    "page": "background.html",
-    "persistent": false
+    "page": "background.html"
   },
   "content_scripts": [
     {
